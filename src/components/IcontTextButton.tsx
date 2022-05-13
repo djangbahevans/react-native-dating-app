@@ -1,5 +1,6 @@
 import React from "react"
 import { GestureResponderEvent, StyleProp, Text, TextStyle, TouchableOpacity, View, ViewStyle } from "react-native"
+import { FontAwesome as Icon } from "@expo/vector-icons"
 
 type Props = {
   buttonStyle?: StyleProp<ViewStyle>,
@@ -9,16 +10,19 @@ type Props = {
   style?: StyleProp<ViewStyle>
 }
 
-const Button = ({ style = {}, buttonStyle, textStyle, onPress, title }: Props) => {
+const IconTextButton = ({ style = {}, buttonStyle, textStyle, onPress, title }: Props) => {
   return (
     <TouchableOpacity
       style={[{ width: "100%", height: 56, borderRadius: 15 }, style]}
       onPress={onPress} >
-      <View style={[buttonStyle, { flex: 1, justifyContent: "center", borderRadius: 15 }]}>
-        <Text style={[textStyle, { fontSize: 16, textAlign: "center" }]}>{title}</Text>
+      <View style={[{ flex: 1, borderRadius: 15, flexDirection: "row", alignItems: "center" }, buttonStyle]}>
+        <Icon
+          name="calendar"
+          style={[{ fontSize: 20, marginHorizontal: 20 }, textStyle]} />
+        <Text style={[{ fontSize: 16 }, textStyle]}>{title}</Text>
       </View>
     </TouchableOpacity >
   )
 }
 
-export default Button
+export default IconTextButton
