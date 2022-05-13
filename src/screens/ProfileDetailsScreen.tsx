@@ -74,7 +74,7 @@ const ProfileDetailScreen = () => {
           }}
         />
       </Popup>
-    </SafeAreaView >
+    </SafeAreaView>
   )
 }
 

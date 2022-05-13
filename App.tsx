@@ -2,13 +2,13 @@ import { StatusBar } from "expo-status-bar"
 import React from "react"
 import { StyleSheet, View } from "react-native"
 import { SafeAreaProvider } from "react-native-safe-area-context"
-import ProfileDetailScreen from "./src/screens/ProfileDetailsScreen"
+import GenderScreen from "./src/screens/GenderScreen"
 
 export default function App() {
   return (
     <SafeAreaProvider>
       <View style={styles.container}>
-        <ProfileDetailScreen />
+        <GenderScreen />
         <StatusBar style="dark" />
       </View>
     </SafeAreaProvider>
