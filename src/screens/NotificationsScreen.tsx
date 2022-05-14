@@ -19,14 +19,13 @@ const NotificationsScreen = () => {
           style={{
             width: 240,
             height: 240,
-            backgroundColor: "#eee",
           }}
           // Find more Lottie files at https://lottiefiles.com/featured
           source={require("../../statics/91137-notification.json")}
         />
       </View>
-      <Text style={{ fontSize: 24, fontWeight: "bold", marginTop: 64 }}>Search Friends</Text>
-      <Text style={{ textAlign: "center", fontSize: 14, marginTop: 10 }}>You can find your friends from your contact lists to get connected</Text>
+      <Text style={{ fontSize: 24, fontWeight: "bold", marginTop: 64 }}>Enable Notifictions</Text>
+      <Text style={{ textAlign: "center", fontSize: 14, marginTop: 10 }}>Get push notifications when you get a match or receive a message.</Text>
       <Button
         style={{ marginTop: 120 }}
         buttonStyle={{ backgroundColor: "#e94057" }}

@@ -19,7 +19,7 @@ const FriendsScreen = () => {
           style={{
             width: 240,
             height: 240,
-            backgroundColor: "#eee",
+            backgroundColor: "transparent"
           }}
           // Find more Lottie files at https://lottiefiles.com/featured
           source={require("../../statics/53610-friends.json")}
